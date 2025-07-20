@@ -27,7 +27,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="pt-40 pb-20 px-4">
+    <section className=" pb-20 px-4">
       <div className="container mx-auto text-center">
         <h3 className="text-4xl md:text-8xl lg:text-[80px] pb-6 gradient-title">
           Manage Your Finances <br /> with Intelligence
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-image-wrapper mt-5 md:mt-0">
             <div ref={imageRef} className="hero-image">
-               <Image src="/banner.jpeg" width={1280} height={720} alt="Dashboard Preview" className="rounded-2xl shadow-2xl border mx-auto" priority/>
+               <Image src="/banner.jpg" width={1280} height={720} alt="Dashboard Preview" className="rounded-2xl shadow-2xl border mx-auto" priority/>
              </div>
         </div>
       </div>

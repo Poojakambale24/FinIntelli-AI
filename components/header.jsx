@@ -1,12 +1,15 @@
-import {  SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
-import Link from 'next/link'
-import Image from 'next/image'
 
-import React from 'react'
-import { Button } from './ui/button'
-import { LayoutDashboard, PenBox } from 'lucide-react'
+import React from "react";
+import { Button } from "./ui/button";
+import { PenBox, LayoutDashboard } from "lucide-react";
+import Link from "next/link";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
-function header() {
+import Image from "next/image";
+import { checkUser } from "@/lib/checksUser";
+
+const header = async () => {
+  await checkUser()
   return (
     <div className='fixed top-0 w-full bg-nevyBlue/80 backdrop-blur-md z-50 '>
    <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
